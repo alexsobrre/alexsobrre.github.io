@@ -6,6 +6,12 @@ const projects = [{
   description: 'Analyzed 30,000 credit-card customers to prioritize limited account-review resources. Reviewing the highest-risk 10% captured 31.7% of test defaults; a simple repayment rule captured 31.5%. Compared models, validated probabilities, and explored hypothetical financial impact.',
   tools: ['Python', 'Pandas', 'scikit-learn', 'Credit Risk', 'Financial Analysis'],
   url: 'https://github.com/alexsobrre/credit-default-risk-analysis'
+}, {
+  title: 'Formula 1 Podium Forecast',
+  category: '02 / SPORTS & PREDICTIVE DATA SCIENCE',
+  description: 'Used FastF1 data from 190 races to test podium forecasts against driver and team form. Random forest averaged 1.96 correct podium picks out of three in 2025 versus 1.71 for recent form, with weaker performance in 2026. Includes chronological backtests and a dated next-race forecast.',
+  tools: ['Python', 'FastF1', 'scikit-learn', 'Forecasting', 'Data Visualization'],
+  url: 'https://github.com/alexsobrre/f1-race-forecast'
 }];
 const grid = document.getElementById('project-grid');
 if (projects.length) document.getElementById('empty-projects').hidden = true;
