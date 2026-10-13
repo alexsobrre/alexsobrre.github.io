@@ -12,6 +12,12 @@ const projects = [{
   description: 'Used FastF1 data from 190 races to test podium forecasts against driver and team form. Random forest averaged 1.96 correct podium picks out of three in 2025 versus 1.71 for recent form, with weaker performance in 2026. Includes chronological backtests and a dated next-race forecast.',
   tools: ['Python', 'FastF1', 'scikit-learn', 'Forecasting', 'Data Visualization'],
   url: 'https://github.com/alexsobrre/f1-race-forecast'
+}, {
+  title: 'Revenue Quality & Customer Concentration',
+  category: '03 / FINANCE & SQL BUSINESS ANALYSIS',
+  description: 'Used DuckDB SQL to reconcile 541,909 transaction lines into £9.77M net recorded sales. Explained volume-led growth, cancellation adjustments, customer concentration, and repeat purchasing, with auditable definitions and nine integrity checks.',
+  tools: ['SQL', 'DuckDB', 'Financial Analysis', 'Window Functions', 'Data Validation'],
+  url: 'https://github.com/alexsobrre/revenue-quality-sql'
 }];
 const grid = document.getElementById('project-grid');
 if (projects.length) document.getElementById('empty-projects').hidden = true;
