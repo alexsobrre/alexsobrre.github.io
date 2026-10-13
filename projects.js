@@ -1,6 +1,12 @@
 // Add completed projects here. Each entry supports title, category, description,
 // tools (an array), and optional url. All visitors see these published entries.
-const projects = [];
+const projects = [{
+  title: 'Credit Default Risk & Review Prioritization',
+  category: '01 / FINANCE & PREDICTIVE ANALYTICS',
+  description: 'Analyzed 30,000 credit-card customers to prioritize limited account-review resources. Reviewing the highest-risk 10% captured 31.7% of test defaults; a simple repayment rule captured 31.5%. Compared models, validated probabilities, and explored hypothetical financial impact.',
+  tools: ['Python', 'Pandas', 'scikit-learn', 'Credit Risk', 'Financial Analysis'],
+  url: 'https://github.com/alexsobrre/credit-default-risk-analysis'
+}];
 const grid = document.getElementById('project-grid');
 if (projects.length) document.getElementById('empty-projects').hidden = true;
 projects.forEach(project => {
